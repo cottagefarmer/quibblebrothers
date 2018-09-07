@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd php -y
+cd /var/www/html
+aws s3 cp s3://bigprodcompany-builds-prod10/builds/application_prod.zip application_prod.zip
+unzip application_prod.zip
+sudo service httpd start
