@@ -20,7 +20,7 @@ variable "publicSG" {
 }
 
 variable "userdatapath" {
-  default = "//home//user//MyCode//udemy/terraform//userdata.txt"
+  default = "~//MyCode//terraform//userdata.txt"
 }
 
 variable "ASGAZs" {
