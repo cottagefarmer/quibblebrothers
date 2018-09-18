@@ -1,7 +1,7 @@
 provider "aws" {
   region                  = "eu-west-1"
   profile                 = "terraform-user"
-}
+}test 2
 
 variable "VPCID" {
   default = "vpc-0ae93dba1685fca8c"
